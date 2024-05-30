@@ -1,0 +1,5 @@
+<mvc:XMLView xmlns:m="sap.m" id="_IDGenXMLView1" xmlns:mvc="sap.ui.core.mvc" >
+
+<m:Text id="_IDGenText1" text="VISTA PRUEBA"/>
+
+</mvc:XMLView>

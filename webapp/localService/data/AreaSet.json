@@ -1,0 +1,162 @@
+[
+    {
+        "IdAdmin": "WVH",
+        "IdArea": "GXC",
+        "Nombre": "Nombre1",
+        "Presupuesto": "Presupuesto1",
+        "CantidadEmpleados": "Ca1",
+        "DescripcionProyectos": "DescripcionProyectos1"
+    },
+    {
+        "IdAdmin": "SSo",
+        "IdArea": "mbP",
+        "Nombre": "Nombre2",
+        "Presupuesto": "Presupuesto2",
+        "CantidadEmpleados": "Ca2",
+        "DescripcionProyectos": "DescripcionProyectos2"
+    },
+    {
+        "IdAdmin": "vYY",
+        "IdArea": "gII",
+        "Nombre": "Nombre3",
+        "Presupuesto": "Presupuesto3",
+        "CantidadEmpleados": "Ca3",
+        "DescripcionProyectos": "DescripcionProyectos3"
+    },
+    {
+        "IdAdmin": "wUP",
+        "IdArea": "WQC",
+        "Nombre": "Nombre4",
+        "Presupuesto": "Presupuesto4",
+        "CantidadEmpleados": "Ca4",
+        "DescripcionProyectos": "DescripcionProyectos4"
+    },
+    {
+        "IdAdmin": "ebD",
+        "IdArea": "EjF",
+        "Nombre": "Nombre5",
+        "Presupuesto": "Presupuesto5",
+        "CantidadEmpleados": "Ca5",
+        "DescripcionProyectos": "DescripcionProyectos5"
+    },
+    {
+        "IdAdmin": "vDJ",
+        "IdArea": "Aho",
+        "Nombre": "Nombre6",
+        "Presupuesto": "Presupuesto6",
+        "CantidadEmpleados": "Ca6",
+        "DescripcionProyectos": "DescripcionProyectos6"
+    },
+    {
+        "IdAdmin": "qJF",
+        "IdArea": "hZP",
+        "Nombre": "Nombre7",
+        "Presupuesto": "Presupuesto7",
+        "CantidadEmpleados": "Ca7",
+        "DescripcionProyectos": "DescripcionProyectos7"
+    },
+    {
+        "IdAdmin": "COm",
+        "IdArea": "Ebk",
+        "Nombre": "Nombre8",
+        "Presupuesto": "Presupuesto8",
+        "CantidadEmpleados": "Ca8",
+        "DescripcionProyectos": "DescripcionProyectos8"
+    },
+    {
+        "IdAdmin": "arv",
+        "IdArea": "BxL",
+        "Nombre": "Nombre9",
+        "Presupuesto": "Presupuesto9",
+        "CantidadEmpleados": "Ca9",
+        "DescripcionProyectos": "DescripcionProyectos9"
+    },
+    {
+        "IdAdmin": "UuP",
+        "IdArea": "xrK",
+        "Nombre": "Nombre10",
+        "Presupuesto": "Presupuesto10",
+        "CantidadEmpleados": "C10",
+        "DescripcionProyectos": "DescripcionProyectos10"
+    },
+    {
+        "IdAdmin": "GxE",
+        "IdArea": "YrF",
+        "Nombre": "Nombre11",
+        "Presupuesto": "Presupuesto11",
+        "CantidadEmpleados": "C11",
+        "DescripcionProyectos": "DescripcionProyectos11"
+    },
+    {
+        "IdAdmin": "mSk",
+        "IdArea": "TdM",
+        "Nombre": "Nombre12",
+        "Presupuesto": "Presupuesto12",
+        "CantidadEmpleados": "C12",
+        "DescripcionProyectos": "DescripcionProyectos12"
+    },
+    {
+        "IdAdmin": "fgu",
+        "IdArea": "zsW",
+        "Nombre": "Nombre13",
+        "Presupuesto": "Presupuesto13",
+        "CantidadEmpleados": "C13",
+        "DescripcionProyectos": "DescripcionProyectos13"
+    },
+    {
+        "IdAdmin": "fmf",
+        "IdArea": "TNS",
+        "Nombre": "Nombre14",
+        "Presupuesto": "Presupuesto14",
+        "CantidadEmpleados": "C14",
+        "DescripcionProyectos": "DescripcionProyectos14"
+    },
+    {
+        "IdAdmin": "tTb",
+        "IdArea": "ulB",
+        "Nombre": "Nombre15",
+        "Presupuesto": "Presupuesto15",
+        "CantidadEmpleados": "C15",
+        "DescripcionProyectos": "DescripcionProyectos15"
+    },
+    {
+        "IdAdmin": "YtL",
+        "IdArea": "IZW",
+        "Nombre": "Nombre16",
+        "Presupuesto": "Presupuesto16",
+        "CantidadEmpleados": "C16",
+        "DescripcionProyectos": "DescripcionProyectos16"
+    },
+    {
+        "IdAdmin": "Zkx",
+        "IdArea": "yIM",
+        "Nombre": "Nombre17",
+        "Presupuesto": "Presupuesto17",
+        "CantidadEmpleados": "C17",
+        "DescripcionProyectos": "DescripcionProyectos17"
+    },
+    {
+        "IdAdmin": "qAV",
+        "IdArea": "Eaq",
+        "Nombre": "Nombre18",
+        "Presupuesto": "Presupuesto18",
+        "CantidadEmpleados": "C18",
+        "DescripcionProyectos": "DescripcionProyectos18"
+    },
+    {
+        "IdAdmin": "Bae",
+        "IdArea": "osc",
+        "Nombre": "Nombre19",
+        "Presupuesto": "Presupuesto19",
+        "CantidadEmpleados": "C19",
+        "DescripcionProyectos": "DescripcionProyectos19"
+    },
+    {
+        "IdAdmin": "AhT",
+        "IdArea": "RRJ",
+        "Nombre": "Nombre20",
+        "Presupuesto": "Presupuesto20",
+        "CantidadEmpleados": "C20",
+        "DescripcionProyectos": "DescripcionProyectos20"
+    }
+]

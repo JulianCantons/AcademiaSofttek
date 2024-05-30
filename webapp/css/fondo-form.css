@@ -1,0 +1,19 @@
+.img-fondoAreas{
+    position: relative;
+  }
+  
+  .img-fondoAreas::after{
+    background-image: url("/images/imgFondoForm.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  

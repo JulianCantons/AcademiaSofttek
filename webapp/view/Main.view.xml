@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.softteck.proyectoempresa.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" height="100%">
+
+    <Page id="page" showHeader="false" class="img-fondo">
+        
+
+            <IconTabHeader class="tab-header" id="iconTabBar" select="onMenuItemPress">
+                <items>
+                    <IconTabFilter id="_IDGenIconTabFilter1" text="Inicio" key="Inicio" />
+                    <IconTabFilter id="_IDGenIconTabFilter2" text="Administradores" key="Administradores" />
+                    </items>
+            </IconTabHeader>
+        
+
+     
+            <mvc:XMLView viewName="com.softteck.proyectoempresa.view.Inicio" id="inicioView" visible="{/showInicioView}" />
+        
+
+        <footer>
+            <Bar class="footerBar" id="footer" design="Footer">
+                <contentMiddle>
+                    <Label id="_IDGenLabel1" text="© 2024 Proyecto Empresa. Todos los derechos reservados." />
+                    <Label id="_IDGenLabel2" text="cantonsjulian@gmail.com   " />
+                </contentMiddle>
+            </Bar>
+        </footer>
+
+     
+
+    </Page>
+
+</mvc:View>

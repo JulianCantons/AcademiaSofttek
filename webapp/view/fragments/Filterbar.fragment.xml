@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:fb="sap.ui.comp.filterbar">
+
+    <fb:FilterBar id="filterbar" persistencyKey="myPersKey" 
+    useToolbar="false" search=".onSearch" filterChange=".onFilterChange" 
+    showGoOnFB="true" showFilterConfiguration="false" 
+    reset="onRestoreFilterFields">
+        <fb:filterGroupItems>
+            <fb:FilterGroupItem id="_IDGenFilterGroupItem1" name="Nombre" label="Nombre" groupName="Group1" visibleInFilterBar="true">
+                <fb:control>
+                    <Input id="nombreInInput" name="Nombre" showValueHelp="true" change="onChangeAdminId" valueHelpRequest="onValueHelpAdmin" busyIndicatorDelay="0" />
+                </fb:control>
+            </fb:FilterGroupItem>
+            <fb:FilterGroupItem id="_IDGenFilterGroupItem2" name="Apellido" label="Apellido" groupName="Group1" visibleInFilterBar="true">
+                <fb:control>
+                    <Input id="ApellidoInput" name="Apellido" showValueHelp="true" change="onChangeNombre" valueHelpRequest="onValueHelpNombre" busyIndicatorDelay="0" />
+                </fb:control>
+            </fb:FilterGroupItem>
+        </fb:filterGroupItems>
+    </fb:FilterBar>
+
+</core:FragmentDefinition>
+

@@ -1,0 +1,55 @@
+<mvc:View controllerName="com.softteck.proyectoempresa.controller.AdministradoresDetail"
+
+xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:tnt="sap.tnt" height="100%">
+
+    <Page id="as" class="img-fondoAreas">
+<Table id="areasTable" selectionChange="onSelectionChange" mode="SingleSelectMaster" items="{ToAreaSet}" >
+                <headerToolbar>
+                    <OverflowToolbar id="_IDGenOverflowToolbar1">
+                        <Title id="_IDGenTitle1" text="Areas" level="H2"/>
+                        <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                        <OverflowToolbarButton id="btn-crearArea" icon="sap-icon://add" press="onCreateArea"/>
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="col3">
+                        <Text id="text3" text="Nombre Area" />
+                    </Column>
+                    <Column id="col4">
+                        <Text id="text4" text="Presupuesto" />
+                    </Column>
+                    <Column id="col5">
+                        <Text id="text5" text="Cantidad empleados" />
+                    </Column>
+                    <Column id="col7">
+                        <Text id="text7" text="Descripcion proyecto" />
+                    </Column>
+                    <Column id="col8">
+                        <Text id="text8" text="Acciones" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="collistitem">
+                        <cells>
+                            <Text id="_IDGenText3" text="{Nombre}"/>
+                            <Text id="_IDGenText5" text="{Presupuesto}"/>
+                            <Text id="_IDGenText6" text="{CantidadEmpleados}"/>
+                            <Text id="_IDGenText8" text="{DescripcionProyectos}"/>
+                            <HBox id="_IDGenHBox1">
+                                <Button id="_IDGenButton2" icon="sap-icon://edit" press="onModificarArea" type="Accept"/>
+                                <Button id="_IDGenButton3" icon="sap-icon://delete" press="onEliminarArea" type="Reject"/>
+                            </HBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+    </Page>
+
+
+  </mvc:View>  

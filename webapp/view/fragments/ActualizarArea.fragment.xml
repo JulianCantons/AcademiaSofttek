@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+    <Dialog id="admform-in" title="Actualizar Area" state="Warning" contentWidth="50%">
+        <content>
+            <form:SimpleForm id="SimpleFormToolbar" editable="false" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2">
+                <form:content >
+                    <Label id="_IDGenLabel1" text="Nombre" class="labelForm"/>
+                    <Input id="nombreInput" value="{ActualizarArea>/Nombre}" valueLiveUpdate="true"/>
+
+                    <Label id="_IDGenLabel2" text="Presupuesto" class="labelForm"/>
+                    <Input id="presupuestoInput" value="{ActualizarArea>/Presupuesto}" valueLiveUpdate="true"/>
+
+                    <Label id="_IDGenLabel3" text="Cantidad Empleados" class="labelForm"/>
+                    <Input id="cantidadEmpleadosnput1" value="{ActualizarArea>/CantidadEmpleados}" valueLiveUpdate="true"/>
+                  
+                    <Label id="_IDGenLabel5" text="Descripcion de Proyectos" class="labelForm"/>
+                    <Input id="descripcionProyectosInput" value="{ActualizarArea>/DescripcionProyectos}" valueLiveUpdate="true"/>
+                </form:content>
+                <form:layoutData>
+                    <FlexItemData id="_IDGenFlexItemData1" shrinkFactor="0" backgroundDesign="Solid" styleClass="sapContrastPlus"/>
+                </form:layoutData>
+            </form:SimpleForm>
+        </content>
+        <beginButton>
+            <Button id="_IDGenButton1" text="Confirmar" press="onActualizarArea" type="Accept" />
+        </beginButton>
+        <endButton>
+            <Button id="_IDGenButton2" text="Cancelar" press="onCerrarActualizarArea" type="Reject" />
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03" xml:lang="es" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Admin" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="IdAdmin"/>
+                </Key>
+                <Property Name="IdAdmin" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Ficticio" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Nombre" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Char" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Apellido" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Char" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Email" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Char" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="ToAreaSet" Relationship="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Assoc_Admin_to_Area" FromRole="FromRole_Assoc_Admin_to_Area" ToRole="ToRole_Assoc_Admin_to_Area"/>
+            </EntityType>
+            <EntityType Name="Area" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="IdAdmin"/>
+                    <PropertyRef Name="IdArea"/>
+                </Key>
+                <Property Name="IdAdmin" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Ficticio" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="IdArea" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Ficticio" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Nombre" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Char" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Presupuesto" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Char" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="CantidadEmpleados" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Ficticio" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="DescripcionProyectos" Type="Edm.String" Nullable="false" MaxLength="90" sap:unicode="false" sap:label="CHAR90" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="Admin" Relationship="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Assoc_Admin_to_Area" FromRole="ToRole_Assoc_Admin_to_Area" ToRole="FromRole_Assoc_Admin_to_Area"/>
+            </EntityType>
+            <Association Name="Assoc_Admin_to_Area" sap:content-version="1">
+                <End Type="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Admin" Multiplicity="1" Role="FromRole_Assoc_Admin_to_Area"/>
+                <End Type="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Area" Multiplicity="*" Role="ToRole_Assoc_Admin_to_Area"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_Assoc_Admin_to_Area">
+                        <PropertyRef Name="IdAdmin"/>
+                    </Principal>
+                    <Dependent Role="ToRole_Assoc_Admin_to_Area">
+                        <PropertyRef Name="IdAdmin"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="AdminSet" EntityType="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Admin" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="AreaSet" EntityType="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Area" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="Assoc_Admin_to_AreaSet" Association="ZACA1Q2024_ADMIN_RRHH_JC_SRV_03.Assoc_Admin_to_Area" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="AdminSet" Role="FromRole_Assoc_Admin_to_Area"/>
+                    <End EntitySet="AreaSet" Role="ToRole_Assoc_Admin_to_Area"/>
+                </AssociationSet>
+            </EntityContainer>
+            <atom:link rel="self" href="http://stks4hpil.eastus2.cloudapp.azure.com:8002/sap/opu/odata/sap/ZACA1Q2024_ADMIN_RRHH_JC_SRV_03/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://stks4hpil.eastus2.cloudapp.azure.com:8002/sap/opu/odata/sap/ZACA1Q2024_ADMIN_RRHH_JC_SRV_03/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
